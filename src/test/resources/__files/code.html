@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</head>
+<body onload="loadPageCode();">
+    <div class="container jumbotron horizontal-center">
+        <p>
+            Auth code
+        </p>
+        <div class="row">
+            <div class="alert alert-primary" role="alert">
+                <p id="loader">LOADING - WAIT</p>
+                <input id="code" type="text" hidden disabled>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.container{
+    max-width: 400px;
+}
+.page1{
+    min-width: 400px;
+    min-height: 400px;
+}
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+.buttonLogin{
+    background-color: rgb(130, 184, 1);
+    border: solid 1px #cbc9c9; 
+    border-radius: 5px 5px 5px 5px;
+    width: 100px;
+}
+.buttonLoginCode{
+    background-color: rgb(130, 184, 1);
+    border: solid 1px #cbc9c9; 
+    border-radius: 5px 5px 5px 5px;
+    width: 100px;
+}
+.passwdDiv{
+    width: 25px;
+}
+.passwdField{
+    width: 15px;
+}
+.horizontal-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</head>
+
+<body onload="loadPage1();loadPage2();">
+    
+<div class="mainContainer horizontal-center">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container page1 jumbotron horizontal-center" >
+                <div class="row">
+                        <div class="alert alert-primary" role="alert">
+                            Provide login: (test@devskiller.com)
+                        </div>
+                </div>
+                <div class="row">
+                    <input type="email" class="form-control" id="emailBox" placeholder="name@example.com" hidden>
+                </div>
+                <br>
+                <div class="row">
+                    <a href="#" class="alogin" role="button" data-slide="next">
+                        <button class="buttonLogin" disabled>Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container page1 jumbotron horizontal-center" >
+                <p>
+                    Click to <a href="code.html" target="_blank">open page</a>
+                </p>
+                <div class="row">
+                    <div class="alert alert-primary" role="alert">
+                        Provide code:
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control" id="codeBox">
+                </div>
+                <br>
+                <div class="row">
+                    <a href="#carouselExampleControls" role="button" data-slide="next">
+                        <button class="buttonLoginCode" disabled>Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="pageLogin_Masked">
+                <iframe src="loginMasked.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+</div>
+<footer id="footer" class="fixed-bottom text-center">
+    <p class="copyright">©  Copyright 2020 by Devskiller Sp. z o.o.. All Rights Reserved.</p>
+</footer>
+</body>
+</html> 

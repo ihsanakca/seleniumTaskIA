@@ -1,0 +1,65 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+### *** required entries below ***
+###
+### Please do not add anything below this line, your changes will be overwritten
+###
+*.launch
+.externalToolBuilders/
+.DS_Store
+.DS.d74cb6fe
+__MACOSX/
+.idea/
+.nb-gradle/
+.settings/
+.history/
+atlassian-ide-plugin.xml
+nbactions.xml
+nbbuild/
+nbdist/
+nbproject/private/
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/278ad
+!.vscode/extensions.json
+*.code-workspace
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+target
+
+
+
+
+###
+###                                                                                                                                                                                                                                  git#161965
+###
