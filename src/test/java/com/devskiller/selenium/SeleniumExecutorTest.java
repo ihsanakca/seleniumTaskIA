@@ -10,7 +10,7 @@ public class SeleniumExecutorTest extends BaseSeleniumTest {
     private static final String PASSWORD = "DevSkill1!";
 
     @Test
-    public void MultifactorAuthenticationLogin() {
+    public void MultifactorAuthenticationLogin()  {
         webDriver.get("http://localhost:8089/index.html");
         Executor executor = new SeleniumExecutor(webDriver);
 

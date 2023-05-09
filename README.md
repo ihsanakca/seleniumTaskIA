@@ -1,10 +1,13 @@
 # Introduction
 Multifactor authentication  
-You have received a request to automate a platform authentication process. The platform has a multifactor authentication mechanism and this mechanism requires providing:
+You have received a request to automate a platform authentication process. 
+The platform has a multifactor authentication mechanism and this mechanism requires providing:
 - an email address,
 - a code from an external page,
 - a masked password.
-The steps on the test page have already been prepared by a manual QA. Your job is to implement a few methods in the SeleniumExecutor class, which should use the Selenium WebDriver to perform the below tasks on the page from the src/test/resources/__files/index.html page. 
+The steps on the test page have already been prepared by a manual QA. Your job is to implement 
+- a few methods in the SeleniumExecutor class, which should use the Selenium WebDriver to perform the 
+- below tasks on the page from the src/test/resources/__files/index.html page. 
 
 # Problem Statement
 1. In the `SetLoginAndClickNext(String login)` method: pass a variable to the login field and click the `Next` button.
