@@ -7,8 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Arrays;
-import java.util.List;
+
 import java.util.Set;
 
 public class SeleniumExecutor implements Executor {
@@ -87,7 +86,7 @@ public class SeleniumExecutor implements Executor {
         String[] split = elementText.split("\n");
         String[] split1 = split[2].split(":");
         String maskPassFull = split1[1];
-        System.out.println("maskPassFull = " + maskPassFull);
+
         String[] maskPassSplit = maskPassFull.split("");
 
         WebElement element0 = driver.findElement(By.cssSelector("#passwd_0"));
@@ -120,7 +119,10 @@ public class SeleniumExecutor implements Executor {
 
     @Override
     public String GetLoggedInText() {
-        return driver.findElement(By.cssSelector("#loggedIn")).getText();
+        WebElement element = driver.findElement(By.cssSelector("#loggedIn"));
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        String elementText = (String) jse.executeScript("return arguments[0].innerText;", element);
+        return elementText;
         // throw new org.apache.commons.lang3.NotImplementedException("Implement this method");
     }
 
