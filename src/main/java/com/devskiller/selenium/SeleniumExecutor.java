@@ -86,6 +86,7 @@ public class SeleniumExecutor implements Executor {
         String[] split = elementText.split("\n");
         String[] split1 = split[2].split(":");
         String maskPassFull = split1[1];
+        System.out.println("maskPassFull = " + maskPassFull);
 
         String[] maskPassSplit = maskPassFull.split("");
 
